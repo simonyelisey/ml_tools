@@ -17,7 +17,7 @@ def bootstrap_samples(data: np.array, n_samples: int):
     return bootstrapsamples
 
 
-def confident_interval(stats_list: np.array, alpha: float):
+def confidence_interval(stats_list: np.array, alpha: float):
     """
     Функция создает доверительный интервал статистик, полученных из сгенерированных выборок методом Bootstrap
 
