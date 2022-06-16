@@ -1,6 +1,6 @@
-# academic
-Repository with important academic notes 
+# ml_tools
+Repository with useful machine learning tools 
 
-В данном репозитории будет хранится реализация различных подходов по **машинному обучению** и **статистике**.
+This repository stores the implementation of various approaches to **machine learning** and **statistics**.
 
-Папка `statistics` - подходы по статистике.
+
