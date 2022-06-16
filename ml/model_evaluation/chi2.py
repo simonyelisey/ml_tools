@@ -35,7 +35,7 @@ def mcnemar_comparison(data: np.array, alpha: float) -> None:
     H0 - classifiers have a similar proportion of errors on the test set
     H1 - classifiers have a different proportion of errors on the test set
 
-    :param data:
+    :param data: 2 models results confusion matrix
     :param alpha: significant level
     :return: [0] - chi_square statistic
              [1] - p_value
