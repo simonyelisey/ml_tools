@@ -22,3 +22,21 @@ def non_informative_features(dataframe: pd.DataFrame, threshold: float) -> list:
       print(f'There is(are) {len(low_inf_feat)} low informative feature(s).')
 
       return low_inf_feat
+    
+ 
+def num_fill_na(df: pd.DataFrame, grouping_col: str, nan_cols: list, agg: str) -> pd.DataFrame:
+    
+    """
+     NaNs filling in numerical features using aggregation function grouping by categorical feature
+    
+    :param df: pd.DataFrame which contain nans
+    :param grouping_col: string of categorical feature name by which the dataframe is groupping
+    :param nan_cols: list of features which contain NaNs
+    :param agg: str - aggregation function
+    :return: pd.DataFrame with filled NaNs
+    """
+    
+    for col in nan_cols:
+        df[col] = df[col].fillna(df.groupby(grouping_col)[col].transform(agg))
+
+    return df
