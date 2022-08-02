@@ -1,3 +1,9 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
 def transform_cyclical_features(data: pd.DataFrame, date_cols: list):
     """
     Cyclical features transformation to two dimensions using sin and cos transformations.
