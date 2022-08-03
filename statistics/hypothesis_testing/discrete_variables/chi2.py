@@ -9,8 +9,6 @@ def chi2_test(data: np.array, alpha: float) -> None:
     
     :param data: contingency table
     :param alpha: significant level
-    :return: [0] - chi_square statistic
-             [1] - p_value
     """
 
     stat, p, dof, expected = chi2_contingency(data)
