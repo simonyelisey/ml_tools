@@ -1,1 +1,2 @@
-Implementation of homogeneity tests for continious variables.
+Performe the homogeneity tests for continious variables.
+
