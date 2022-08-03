@@ -1,3 +1,3 @@
-# Проверка гипотез
-
-В данной папке находяся различные методы по проверке гипотез.
+The statistical hypothesis testing:
+- goodness of fit tests;
+- homogeneity tests.
