@@ -11,8 +11,6 @@ def mcnemar_test(data: np.array, alpha: float) -> None:
     
     :param data: continguency table of two variables
     :param alpha: significant level
-    :return: [0] - chi_square statistic
-             [1] - p_value
     """
     result = mcnemar(data)
     print(f"McNemar statistic = {result.statistic}")
