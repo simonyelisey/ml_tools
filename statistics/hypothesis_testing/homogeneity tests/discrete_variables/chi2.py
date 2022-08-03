@@ -20,3 +20,4 @@ def chi2_test(data: np.array, alpha: float) -> None:
         print('\nVariables are dependent (reject H0).')
     else:
         print('\nVariables are independent (fail to reject H0).')
+        
