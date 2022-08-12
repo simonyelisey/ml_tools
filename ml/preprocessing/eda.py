@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 def non_informative_features(dataframe: pd.DataFrame, threshold: float) -> list:
   """
   Function finds non-informative features.
