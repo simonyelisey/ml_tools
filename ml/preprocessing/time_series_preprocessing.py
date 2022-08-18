@@ -1,6 +1,6 @@
 def treat_outliers_if(data: pd.DataFrame, target: str, date_col: str, test_dates: list, scaler, outlier_detector):
     """
-    The function detects outliers using IsolationForest algorithm and treats it:
+    The function detects outliers in time series using IsolationForest algorithm and treats it:
         - if outlier's index == 0 - change it to the mean of next 6 months
         - if outlier's index == -1 - change it to the mean of previous 6 months
         - else - replace it to nan and interpolate
